@@ -1,0 +1,239 @@
+:root{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(216, 170, 114, 0.8),rgba(216, 170, 114, 0.8)), url(images/bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+body{
+    background: #e3f2fd;
+}
+
+.split{
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left{
+    left: 0; 
+    background-color: var(--main-color);
+    overflow-y: scroll;
+}
+
+.left::-webkit-scrollbar{
+    display: none;
+}
+  
+.right {
+    right: 0;
+    background-color: var(--main-color);
+}
+
+.centeredd{
+    position: relative;
+
+}
+
+.centered-one{
+    position: relative;
+    bottom: 15%;
+}
+
+.centered-two{
+    position: relative;
+    bottom: 30%;
+}
+
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered-three{
+    position: relative;
+    bottom: 45%;
+}
+
+.submit-btn{
+    position: relative;
+    bottom: 60%;
+    left: 36%;
+}
+  
+.img{
+    width: 10px;
+    height: 35px;
+    border-radius: 0;
+}
+
+.yourname h1{
+    margin-bottom: 5%;
+}
+
+.yourname{
+    width: 380px;
+    margin: 150px auto;
+}
+
+.yourname .select-btn{
+    display: flex;
+    height: 55px;
+    background: #fff;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.yourname .select-btn input[type=text]{
+    font-size: 18px;
+    border: 0;
+    outline: none;
+}
+
+.select-menu{
+    width: 380px;
+    margin: 150px auto;
+}
+
+.select-menu .select-btn{
+    display: flex;
+    height: 55px;
+    background: #fff;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.select-btn i{
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.select-menu .active .select-btn i{
+    transform: rotate(-180deg);
+}
+
+.select-menu .options{
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    display: none;
+}
+
+.select-menu.active .options{
+    display: block;
+}
+
+.options .option{
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: #fff;
+}
+
+.options .option:hover{
+    background: #f2f2f2;
+}
+
+.option i{
+    font-size: 25px;
+    margin-right: 12px;
+}
+
+.option .option-text{
+    font-size: 18px;
+    color: #333;
+}
+
+.quantity{
+    width: 380px;
+    margin: 150px auto;
+}
+
+.quantity .select-btn{
+    display: flex;
+    height: 55px;
+    background: #fff;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.quantity .select-btn input[type=text]{
+    font-size: 18px;
+    border: 0;
+    outline: none;
+}
+
+.price{
+    width: 380px;
+    margin: 150px auto;
+}
+
+.price .select-btn{
+    display: flex;
+    height: 55px;
+    background: #fff;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.price .select-btn input[type=text]{
+    font-size: 18px;
+    border: 0;
+    outline: none;
+}
+
+.submitbtn{
+   padding: 10px 60px;
+   background: #fff;
+   border: 0;
+   outline: none;
+   cursor: pointer;
+   font-size: 18px;
+   font-weight: 400;
+   border-radius: 8px;
+}
